@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link in a better way', () => {
+test('renders learn react link in a conflict way', () => {
   render(<App />);
-  // will be conflict
+  // it was not a conflict
   const linkElement = screen.getByText(/learn react in a/i);
   expect(linkElement).toBeInTheDocument();
 });
